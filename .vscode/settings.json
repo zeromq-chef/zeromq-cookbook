@@ -1,4 +1,28 @@
 {
+    /*--------------------------------------*/
+    //              CMake Tools
+    /*--------------------------------------*/
+
+    // 루트 CMakeLists.txt 파일의 디렉터리입니다.
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    // CMake 빌드 파일이 이동할 디렉터리입니다.
+    "cmake.buildDirectory": "${workspaceFolder}/build/${buildType}",
+    // CMake 프로젝트 디렉터리를 열 때 자동으로 구성합니다.
+    "cmake.configureOnOpen": true,
+    // 대상을 실행하기 전에 빌드합니다.
+    "cmake.buildBeforeRun": true,
+    // 빌드하기 전에 열린 파일을 저장합니다.
+    "cmake.saveBeforeBuild": true,
+    // configure arguments
+    "cmake.configureArgs":[
+        "-DCMAKE_BUILD_TYPE:STRING=${buildType}"
+    ],
+    "editor.tabSize": 4,
+
+    /*--------------------------------------*/
+    //              Others
+    /*--------------------------------------*/
+
     "files.associations": {
         "ostream": "cpp",
         "atomic": "cpp",
