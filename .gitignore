@@ -1,47 +1,89 @@
-# Prerequisites
-*.d
+# OS junk files
+[Tt]humbs.db
+*.DS_Store
 
-# Compiled Object files
-*.slo
-*.lo
+# Subversion files
+.svn
+
+# VSCODE
+.vscode
+.vscode/**/*.DB*
+.vscode/**/*.db*
+.vscode-ctags
+tags
+
+# Visual Studio
+**/.vs/**
+*.opendb
+*.VC.db
+*.[Oo]bj
+*.user
+*.aps
+*.pch
+*.vspscc
+*.vssscc
+*_i.c
+*_p.c
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.[Cc]ache
+*.ilk
+*.log
+*.lib
+*.sbr
+*.sdf
+*.pyc
+*.xml
+*.plg
+*.opt
+
+# ignore folders
+[Bb]in
+[Bb]uild
+[Ee]xternal
+
+# helper files
+*.bak
+*.sdf
+*.user
+
+# Object files
 *.o
+*.ko
 *.obj
+*.elf
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
+# Libraries
 *.lib
+*.a
+*.la
+*.lo
+
+# Shared objects (inc. Windows DLLs)
+*.dll
+*.so
+*.so.*
+*.dylib
 
 # Executables
 *.exe
 *.out
-*.app
+#*.app
+*.i*86
+*.x86_64
+*.hex
 
-# CMake
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
+# Debug files
+*.dSYM/
+*.su
 
-bin/
+# Office Temp files
+~$*
+
