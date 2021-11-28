@@ -24,25 +24,21 @@ project( ${PROJECT_FOLDER_NAME} )
 
 
 #----------------------------------------
-#       2. Compiler
+#       2. Target
 #----------------------------------------
-
-# Include Directories
-set ( INC_FOLDERS
-
-    
-)
-include_directories( ${INC_FOLDERS} )
-
 # Source Files
 set ( SRC_FILES
-
     ./main.cpp
 )
 
+
+#----------------------------------------
+#       2.1 Option
+#----------------------------------------
 if(${CMAKE_CXX_COMPILER_ID} MATCHES GNU)    # GNU C Compiler
     add_compile_options( -fPIC )                # PIC(Position Independent Code)    : http://www.jiniya.net/ng/2016/01/position-independent-code/
 endif()
+
 
 #----------------------------------------
 #       3. Output

@@ -1,5 +1,18 @@
 {
     /*--------------------------------------*/
+    //             Intellisense
+    /*--------------------------------------*/
+
+    // 값이 지정되지 않거나 "${default}"로 설정된 경우 구성에서 사용할 값입니다.
+    "C_Cpp.default.cStandard": "c11",
+    // 값이 지정되지 않거나 "${default}"로 설정된 경우 구성에서 사용할 값입니다.
+    "C_Cpp.default.cppStandard": "c++11",
+    // 값이 지정되지 않거나 "${default}"로 설정된 경우 구성에서 사용할 값입니다.
+    "C_Cpp.default.intelliSenseMode": "msvc-x64",
+    // The value to use in a configuration if "configurationProvider" is either not specified or set to "${default}"
+    "C_Cpp.default.configurationProvider": "vector-of-bool.cmake-tools",
+
+    /*--------------------------------------*/
     //              CMake Tools
     /*--------------------------------------*/
 
