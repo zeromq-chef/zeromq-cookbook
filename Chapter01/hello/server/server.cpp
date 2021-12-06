@@ -8,9 +8,14 @@
 #include <stdio.h>
 #include <string.h>
 
-// window 전용
+#ifdef _WIN32
 #include <windows.h>
-
+#define sleep(s) Sleep(s)
+#elif __linux__
+#include <unistd.h>
+#else
+#   error "Unknown compiler"
+#endif
 
 int main(void)
 {
@@ -31,7 +36,7 @@ int main(void)
         zmq_msg_close(&request);
 
         // Do some 'work'
-        Sleep(1);
+        sleep(1);
 
         // Send reply back to client
         zmq_msg_t reply;

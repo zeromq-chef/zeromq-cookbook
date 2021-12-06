@@ -37,8 +37,8 @@ set (CMAKE_CXX_STANDARD 11)     # C++11 for Linux/Windows
 if(CMAKE_CXX_COMPILER_ID MATCHES GNU)
     
     ## for Zero MQ
-    include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/libzmq/include )
-    ## TODO : set( LIB_ZMQ
+    include_directories( /usr/lib/x86_64-linux-gnu )
+    set( LIB_ZMQ /usr/lib/x86_64-linux-gnu/libzmq.so )
 
 ## Microsoft Visual Studio
 elseif(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")

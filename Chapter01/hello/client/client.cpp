@@ -8,7 +8,14 @@
 #include <string.h>
 #include <stdio.h>
 
-#include<windows.h>
+#ifdef _WIN32
+#include <windows.h>
+#define sleep(s) Sleep(s)
+#elif __linux__
+#include <unistd.h>
+#else
+#   error "Unknown compiler"
+#endif
 
 int main(void)
 {
@@ -37,7 +44,7 @@ int main(void)
         zmq_msg_close (&reply);
     }
 
-    Sleep(2);
+    sleep(2);
 
     zmq_close(requester);
     zmq_ctx_destroy(context);
