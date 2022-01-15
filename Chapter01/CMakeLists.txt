@@ -7,11 +7,11 @@
 #       projects of Chapter-01
 #----------------------------------------
 
-# for Hello - client
-set( PROJECT_FOLDER_NAME hello/client )
+# for wheather_update - client
+set( PROJECT_FOLDER_NAME wheather_update/client )
 add_subdirectory( ${PROJECT_FOLDER_NAME} )
-# for Hello - server
-set( PROJECT_FOLDER_NAME hello/server )
+# for wheather_update - server
+set( PROJECT_FOLDER_NAME wheather_update/server )
 add_subdirectory( ${PROJECT_FOLDER_NAME} )
 
 
