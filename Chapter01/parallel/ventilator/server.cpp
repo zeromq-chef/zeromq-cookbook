@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <assert.h>
 #include <time.h>
 
 
@@ -20,13 +21,13 @@ int main (void)
     assert (rc == 0);
 
     //  Initialize random number generator
-    srand((unsigned) time(NULL));
+    srand ((unsigned) time (NULL));
     while (1) {
         //  Get values that will fool the boss
         int zipcode, temperature, relhumidity;
-        zipcode     = rand() * 100000;
-        temperature = rand() * 215 - 80;
-        relhumidity = rand() * 50 + 10;
+        zipcode     = rand () * 100000;
+        temperature = rand () * 215 - 80;
+        relhumidity = rand () * 50 + 10;
 
         //  Send message to all subscribers
         char update [20];

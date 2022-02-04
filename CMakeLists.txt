@@ -59,6 +59,7 @@ else()
     break()
 endif()
 
+include_directories( ${CMAKE_CURRENT_SOURCE_DIR}/include )
 
 #----------------------------------------
 #       2. Debug information
